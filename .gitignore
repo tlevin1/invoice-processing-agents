@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+inventory.db
+rejected_invoices.jsonl
+.env
+.pytest_cache/
+*.egg-info/
+dist/
+.DS_Store
