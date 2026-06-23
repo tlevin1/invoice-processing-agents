@@ -98,9 +98,8 @@ def run(invoice: InvoiceData, db_path: str = "") -> ValidationResult:
             ))
 
     # ── Inventory checks (on aggregated quantities) ─────────────────────────
-    kwargs = {"db_path": db_path} if db_path else {}
     for item_name, total_qty in aggregated.items():
-        stock = get_item_stock(item_name, **kwargs)
+        stock = get_item_stock(item_name, db_path=db_path)
 
         if stock is None:
             issues.append(ValidationIssue(
