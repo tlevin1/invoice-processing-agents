@@ -1,6 +1,8 @@
-# Acme Corp — Automated Invoice Processing System
+# Multi-Agent Invoice Processing Pipeline
 
 A multi-agent pipeline that takes an invoice in any format, validates it against live inventory, routes it through tiered approval logic, and pays or rejects it — all from a single command. Built as a working prototype, not a design doc.
+
+The scenario is a case study for a fictional company, Acme Corp: automating its accounts-payable intake end to end.
 
 ---
 
